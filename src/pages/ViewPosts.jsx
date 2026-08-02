@@ -8,7 +8,7 @@ function ViewPosts() {
   // Fetch Posts
   const getPosts = async () => {
     try {
-      const res = await fetch("http://localhost:5000/posts");
+      const res = await fetch("https://crud-operation-backend-gvhj.onrender.com/posts");
       const data = await res.json();
       setPosts(data);
     } catch (err) {
@@ -28,7 +28,7 @@ function ViewPosts() {
     if (!confirmDelete) return;
 
     try {
-      await fetch(`http://localhost:5000/posts/${id}`, {
+      await fetch(`https://crud-operation-backend-gvhj.onrender.com/posts/${id}`, {
         method: "DELETE",
       });
       setPosts(posts.filter((post) => post._id !== id));

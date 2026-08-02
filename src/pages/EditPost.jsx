@@ -32,7 +32,7 @@ function EditPost() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await fetch(`http://localhost:5000/posts/${id}`, {
+            await fetch(`https://crud-operation-backend-gvhj.onrender.com/posts/${id}`, {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json"
