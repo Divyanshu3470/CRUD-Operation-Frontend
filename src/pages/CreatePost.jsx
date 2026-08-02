@@ -47,7 +47,7 @@ function CreatePost() {
         }
     };
 
-    return 
+    return(
         <div className="min-h-screen bg-slate-900 flex justify-center items-center px-4 py-10">
             <div className="w-full max-w-3xl bg-white/10 backdrop-blur-xl border border-slate-700 rounded-3xl p-8">
                 <div className="flex justify-between items-center mb-8">
@@ -88,7 +88,7 @@ function CreatePost() {
 
             </div>
         </div>
-    ;
+    );
 }
 
 export default CreatePost;
