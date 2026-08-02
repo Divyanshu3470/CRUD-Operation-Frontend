@@ -31,7 +31,7 @@ function CreatePost() {
         formData.append("image", post.image);
 
         try {
-            const res = await fetch("http://localhost:5000/posts", {
+            const res = await fetch("https://crud-operation-backend-gvhj.onrender.com/posts", {
                 method: "POST",
                 body: formData,
             });
